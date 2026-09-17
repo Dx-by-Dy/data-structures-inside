@@ -6,5 +6,15 @@ day*/tasks/*
 day*/demo/*
 !day*/demo/*.*
 
+# У пятого дня появились задачи и демонстрации из нескольких файлов: они лежат
+# каталогами, и то же правило нужно на уровень глубже.
+!day*/tasks/*/
+day*/tasks/*/*
+!day*/tasks/*/*.*
+!day*/tasks/*/Makefile
+!day*/demo/*/
+day*/demo/*/*
+!day*/demo/*/*.*
+
 *-release
 *.o
